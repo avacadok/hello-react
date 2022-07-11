@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 const Button = (props) => {
-  // your code here
+
   const {reset} = props;
   return (
     <button onClick={reset}>Reset</button>
@@ -11,16 +11,12 @@ const Button = (props) => {
 
 };
 
-const Application = (props) => {
+const Application = () => {
   const [name, setName] = useState("");
-
-  // your code here
-
   const reset = () => {
     //reset the input field when we click on reset button
     setName("");
     console.log("reset");
-    // your code here
   };
 
   return (
